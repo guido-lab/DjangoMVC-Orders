@@ -1,0 +1,22 @@
+{% extends "orders/base.html" %}
+{% block content %}  
+
+<!-- Blog Entries Column -->
+      <div class="col-md-8">
+
+        <h1 class="my-4">Orders
+        </h1>
+        <a href="{% url 'orders-home' %}">Back to Home</a>
+        <!-- Blog Post -->
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">{{ object.title }}</h2>
+            <p class="card-text">{{ object.description|linebreaks }}</p>
+          </div>
+          <div class="card-footer text-muted">
+            Created at: {{ object.created_at }} by
+            <a href="#">{{ object.created_by }}</a>
+          </div>
+        </div>
+      </div>
+{% endblock %}

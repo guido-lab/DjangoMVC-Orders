@@ -1,0 +1,35 @@
+{% extends "orders/base.html" %}
+{% block content %}
+
+      <div class="col-md-8">
+        <h1 class="my-4">Orders</h1>
+        {% for entries in blog_entries_copy %}
+        <div class="card mb-4">
+          <div class="card-body">
+            <h2 class="card-title">{{ entries.title }}</h2>
+            <p class="card-text">{{ entries.description|truncatechars:100 }}</p>
+            <a href="{% url 'orders-detail' entries.pk %}" style="color: black; background-color: rgb(235, 218, 195);" class="btn btn-primary">Detailed Order &rarr;</a>
+          </div>
+          <div class="card-footer text-muted">
+            Posted on {{ entries.created_at }} by
+            <a href="#">{{ entries.created_by }}</a>
+          </div>
+        </div>
+        {% endfor %}
+        <!-- Pagination -->
+
+        <ul class="pagination justify-content-center mb-4">
+          {% if page_obj.has_previous %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.previous_page_number }}">&larr; Older</a>
+          </li>
+          {% endif %}
+          {% if page_obj.has_next %}
+          <li class="page-item">
+            <a class="page-link" href="?page={{ page_obj.next_page_number  }}">Newer &rarr;</a>
+          </li>
+          {% endif %}
+        </ul>
+
+      </div>
+{% endblock %}
