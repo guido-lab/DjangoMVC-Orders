@@ -13,7 +13,7 @@ Clone This Project (Make Sure You Have Git Installed)
 https://github.com/guido-lab/DjangoMVC-Orders.git
 ```
 
-The following command creates a new virtual environment named venv in the current directory
+The following command creates a new virtual environment named venv in the current directory:
 
 ```bash
 $ python -m venv env
