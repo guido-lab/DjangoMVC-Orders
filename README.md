@@ -10,7 +10,7 @@ A MVC Demo application:
 ## How to setup:
 Clone This Project (Make Sure You Have Git Installed)
 ```
-https://github.com/mustafamuratcoskun/DjangoMVC-Orders.git
+https://github.com/guido-lab/DjangoMVC-Orders.git
 ```
 
 The following command creates a new virtual environment named venv in the current directory
@@ -54,4 +54,3 @@ python manage.py runserver
 The project is runing at: **http://127.0.0.1:8000/**
 
 Access admin pannel: **http://127.0.0.1:8000/admin**
-
