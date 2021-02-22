@@ -32,23 +32,23 @@ Activate virtual environment:
 Install Dependencies:
 
 ```
-pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
 Set Database (Make Sure you are in the same directory as manage.py):
 ```
-python manage.py makemigrations
-python manage.py migrate
+$ python manage.py makemigrations
+$ python manage.py migrate
 ```
 Create SuperUser:
 ```
-python manage.py createsuperuser
+$ python manage.py createsuperuser
 ```
 
 Run the development server:
 
 ```bash
-python manage.py runserver
+$ python manage.py runserver
 ```
 
 The project is runing at: **http://127.0.0.1:8000/**
