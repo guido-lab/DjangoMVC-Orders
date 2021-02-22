@@ -54,4 +54,3 @@ python manage.py runserver
 The project is runing at: **http://127.0.0.1:8000/**
 
 Access admin pannel: **http://127.0.0.1:8000/admin**
-
